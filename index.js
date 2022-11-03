@@ -1,12 +1,19 @@
 class User {
 
+    message;
+    username;
+
     constructor() {
         this.message = 'Hello World';
         console.log(this.message);
     }
 
-    getUserName() {
+    setUserNmae(name) {
+        this.username = name;
+    }
 
+    getUserName() {
+        return this.username;
     }
 
     getUserStatus() {
